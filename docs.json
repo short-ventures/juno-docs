@@ -15,13 +15,12 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Docs",
+        "tab": "Documentation",
         "groups": [
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "delegating-work"
+              "index"
             ]
           },
           {
@@ -31,6 +30,7 @@
               "capabilities/connectors",
               "capabilities/browser",
               "capabilities/file-system",
+              "capabilities/code",
               "capabilities/scheduling",
               "capabilities/memory",
               "capabilities/email"
