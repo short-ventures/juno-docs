@@ -1,33 +1,32 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
-
 # Documentation project instructions
 
 ## About this project
 
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Run `mint dev` to preview locally
-- Run `mint broken-links` to check links
+- This is the Juno documentation site built on Mintlify.
+- Pages are MDX files with YAML frontmatter.
+- Configuration lives in `docs.json`.
+- Run `mint broken-links` to check links.
+- Do not run `mint dev` unless the user explicitly asks you to start a preview server.
 
 ## Terminology
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- Use "Juno" for the product.
+- Use "workspace" for a shared team context.
+- Use "task" for delegated work.
+- Use "connector" for a connected tool integration in user-facing docs.
+- Use "credits" for metered usage.
 
 ## Style preferences
 
-{/* Add any project-specific style rules below */}
-
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
+- Use active voice and second person ("you").
+- Keep sentences concise.
+- Use sentence case for headings.
+- Use bold for UI elements: Click **Settings**.
+- Use code formatting for file names, commands, paths, and code references.
+- Prefer concrete examples over abstract claims.
 
 ## Content boundaries
 
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+- Document user-facing behavior, not internal admin tools.
+- Do not hardcode unstable pricing or credit-cost numbers unless they are sourced from product copy or code.
+- Keep connector descriptions aligned with the app's available connector catalog.

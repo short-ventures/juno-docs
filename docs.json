@@ -9,64 +9,45 @@
     "dark": "#181713"
   },
   "favicon": {
-    "light": "/favicon.svg",
-    "dark": "/favicon-dark.svg"
+    "light": "/favicon.png",
+    "dark": "/favicon-dark.png"
   },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Docs",
         "groups": [
           {
             "group": "Getting started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "delegating-work"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Capabilities",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "capabilities/cloud-computer",
+              "capabilities/connectors",
+              "capabilities/browser",
+              "capabilities/file-system",
+              "capabilities/scheduling",
+              "capabilities/memory",
+              "capabilities/email"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Workspaces & team",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "workspaces/using-workspaces",
+              "workspaces/inviting-your-team"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Credits & billing",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "billing/how-credits-work",
+              "billing/managing-your-plan"
             ]
           }
         ]
@@ -78,6 +59,16 @@
           "anchor": "Website",
           "href": "https://getjuno.com",
           "icon": "house"
+        },
+        {
+          "anchor": "Connectors",
+          "href": "https://getjuno.com/connectors",
+          "icon": "plug"
+        },
+        {
+          "anchor": "Playbooks",
+          "href": "https://getjuno.com/playbooks",
+          "icon": "book-open"
         },
         {
           "anchor": "App",
