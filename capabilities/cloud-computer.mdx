@@ -8,8 +8,6 @@ Generic AI tools use your computer to get work done - but that constraints your 
 
 That's why Juno has its own cloud computer, which it can interact with however it sees fit to help you complete tasks. This means that even while you're lying on a beach, Juno can be getting work done without any change in its abilities. It also means that it can work on tasks at the most suitable time and operate proactively across the tools and data it has access to.
 
-In addition, it provides a security benefit by not running commands on your local computer, which can result in high-risk command execution.
-
 ## Use cases
 
 - Creating, searching and managing files
@@ -17,3 +15,18 @@ In addition, it provides a security benefit by not running commands on your loca
 - Working with different user-uploaded file types
 - Creating, modifying and analyzing images
 - Producing artifacts such as documents, spreadsheets, images etc
+
+## Security
+
+The cloud computer provides a security benefit by not running commands on your local computer, which can result in high-risk command execution.\
+\
+It also enables us to create a higher level of isolation, so that it is protected against prompt injection attacks or exposed libraries. The computer that Juno uses was invented by our team, built specifically for this purpose. 
+
+### Isolation
+
+Cloud computers are isolated at the workspace/user level. For example, if you have 3 users who work across 2 workspaces:
+
+- Each users agent will have a cloud computer that is unique to each workspace
+- Within each workspace, a users agent can work across tasks with a shared file system and computer
+
+This strikes the perfect balance between protecting/isolating data for each user and workspace, while also providing the agent with longer context across multiple work sessions.
