@@ -6,6 +6,18 @@ rss: true
 ---
 
 <Update
+  label="June 15, 2026"
+  rss={{
+    title: "Improved connector credential handling",
+    description: "Juno now asks for missing connector credentials before trying authenticated Ahrefs actions."
+  }}
+>
+  - Ahrefs connector discovery now checks for saved credentials before contacting Ahrefs, so Juno can ask you to connect the account instead of retrying without authentication.
+
+  - Connector errors now stay clearer when credentials are missing, reducing failed task runs caused by unauthenticated discovery requests.
+</Update>
+
+<Update
   label="June 10, 2026"
   rss={{
     title: "Document and connector improvements",
