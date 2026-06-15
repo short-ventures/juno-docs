@@ -1,27 +1,32 @@
 ---
 title: "Cloud computer"
-description: "How Juno uses its own cloud computer to get work done."
+description: "Juno works autonomously using its own computer, so that it can work even when you're offline."
 icon: "desktop"
 ---
 
-Most general AI tools use your computer to get work done - but that's limiting. What if you're offline, for example?
+Generic AI tools use your computer to get work done - but that constraints your agents ability. What if you're offline, for example?
 
-Juno has its own cloud computer, which it can interact with however it sees fit to help you complete tasks.
+That's why Juno has its own cloud computer, which it can interact with however it sees fit to help you complete tasks. This means that even while you're lying on a beach, Juno can be getting work done without any change in its abilities. It also means that it can work on tasks at the most suitable time and operate proactively across the tools and data it has access to.
 
-This means that even while you're lying on a beach, Juno can be getting work done without any change in its abilities.
-
-Additionally, it provides a security benefit by not running commands on your local computer, as many generic tools do.
-
-## What it is for
+## Use cases
 
 - Creating, searching and managing files
-- Using packages to manipulate data and fetch content
+- Using computer packages to do just about anything
 - Working with different user-uploaded file types
-- Creating or analyzing images
+- Creating, modifying and analyzing images
 - Producing artifacts such as documents, spreadsheets, images etc
 
-## What to expect
+## Security
 
-Juno uses its computer as its primary work surface. You won't necessarily know when it is using its computer, but it's safe to assume it is using its computer whenever its getting work done for you.
+The cloud computer provides a security benefit by not running commands on your local computer, which can result in high-risk command execution.\
+\
+It also enables us to create a higher level of isolation, so that it is protected against prompt injection attacks or exposed libraries. The computer that Juno uses was invented by our team, built specifically for this purpose. 
 
-You can use the chatbox history to see when computer commands are being used.
+### Isolation
+
+Cloud computers are isolated at the workspace/user level. For example, if you have 3 users who work across 2 workspaces:
+
+- Each users agent will have a cloud computer that is unique to each workspace
+- Within each workspace, a users agent can work across tasks with a shared file system and computer
+
+This strikes the perfect balance between protecting/isolating data for each user and workspace, while also providing the agent with longer context across multiple work sessions.
