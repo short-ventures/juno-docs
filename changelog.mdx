@@ -6,6 +6,36 @@ rss: true
 ---
 
 <Update
+  label="July 22, 2026"
+  rss={{
+    title: "Shared workspace files and self-contained artifacts",
+    description: "Juno now gives tasks a shared workspace and keeps each artifact together with its supporting files."
+  }}
+>
+  - Tasks now work from a shared `/workspace`, so files can carry across task conversations without being locked inside task-specific folders.
+
+  - Each artifact now has its own folder for its content, images, assets, and other supporting files, making related work easier for Juno to find and keep in sync.
+
+  - Artifact folders include generated configuration that Juno manages automatically, keeping artifact previews and file changes aligned.
+</Update>
+
+<Update
+  label="July 21, 2026"
+  rss={{
+    title: "Continuous tasks and workspace-owned artifacts",
+    description: "Juno now keeps task identity and context consistent across longer conversations while making Library artifacts available across the workspace."
+  }}
+>
+  - The chat picker is now **Tasks**, so you can return to a named task without managing its individual conversation history.
+
+  - When an older task needs a fresh conversation, Juno starts it automatically and carries the relevant compacted context forward.
+
+  - Artifacts in the Library now belong to the workspace and remain available independently of the task where they were created.
+
+  - You can create tables, documents, pages, calendars, galleries, and canvases directly from the **+** menu at the end of the workspace tabs.
+</Update>
+
+<Update
   label="July 20, 2026"
   rss={{
     title: "Queue follow-up prompts during tasks",
