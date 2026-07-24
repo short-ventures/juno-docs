@@ -18,13 +18,15 @@ rss: true
 <Update
   label="July 24, 2026"
   rss={{
-    title: "Remove artifacts and sites from workspace folders",
-    description: "Juno now keeps workspace folders in sync with their artifacts, databases, and published sites when they are removed."
+    title: "Manage artifacts, databases, and sites from workspace folders",
+    description: "Juno now gives databases their own workspace folders and keeps folder removal in sync with artifacts, databases, and published sites."
   }}
 >
-  - You can now remove artifact folders with normal workspace file commands, and Juno also removes the corresponding Library artifacts.
+  - Every database now has a canonical folder in `/workspace/databases`, separate from its table, gallery, and calendar views in `/workspace/artifacts`.
 
-  - Removing a table artifact folder also removes its backing database and linked views. Removing a published site folder removes the site and its public route too.
+  - Removing an artifact folder removes only that view, so its backing database and other linked views remain available.
+
+  - Removing a database folder removes the database and all of its linked artifact views. Removing a published site folder removes the site and its public route too.
 </Update>
 
 <Update
