@@ -16,6 +16,18 @@ rss: true
 </Update>
 
 <Update
+  label="July 24, 2026"
+  rss={{
+    title: "Remove artifacts and sites from workspace folders",
+    description: "Juno now keeps workspace folders in sync with their artifacts, databases, and published sites when they are removed."
+  }}
+>
+  - You can now remove artifact folders with normal workspace file commands, and Juno also removes the corresponding Library artifacts.
+
+  - Removing a table artifact folder also removes its backing database and linked views. Removing a published site folder removes the site and its public route too.
+</Update>
+
+<Update
   label="July 22, 2026"
   rss={{
     title: "Shared workspace files and self-contained artifacts",
