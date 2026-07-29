@@ -8,6 +8,16 @@ rss: true
 <Update
   label="July 27, 2026"
   rss={{
+    title: "Faster task starts during background work",
+    description: "Juno now reserves dedicated capacity for task conversations so background orchestration does not delay them."
+  }}
+>
+  - Task conversations now run on capacity isolated from background workspace orchestration, so they can start promptly even when several long-running background jobs are active.
+</Update>
+
+<Update
+  label="July 27, 2026"
+  rss={{
     title: "Shared artifacts by default",
     description: "New artifacts, databases, and published sites now belong to the workspace by default, so teammates can collaborate without sharing private tasks or chats."
   }}
