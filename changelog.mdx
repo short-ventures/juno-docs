@@ -8,6 +8,18 @@ rss: true
 <Update
   label="July 29, 2026"
   rss={{
+    title: "More reliable database commands",
+    description: "Juno now understands more common database command and SQL forms, reducing retries when it reads, updates, or organizes workspace data."
+  }}
+>
+  - Database commands now accept common aliases, field assignments, JSON files, standard input, filtered updates, row lookups, and delete or remove wording without requiring Juno to reformulate the request.
+
+  - Database SQL now recognizes database names, display labels, familiar row columns, and common date or boolean expressions, with clearer suggestions when a database or column name is misspelled.
+</Update>
+
+<Update
+  label="July 29, 2026"
+  rss={{
     title: "Reliable screenshot inspection",
     description: "Juno now inspects saved screenshots through its image reader without interrupting task conversations."
   }}
