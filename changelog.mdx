@@ -6,6 +6,20 @@ rss: true
 ---
 
 <Update
+  label="July 30, 2026"
+  rss={{
+    title: "Step-by-step browser control",
+    description: "Juno can now keep a browser session open across precise navigation, inspection, and interaction commands while preserving faster one-off page reads and screenshots."
+  }}
+>
+  - Juno can now open a stateful browser, inspect the current page, act on stable element references, manage tabs and navigation, and verify each change with a fresh page snapshot.
+
+  - Quick page fetches and one-off screenshots still avoid starting an interactive browser session, including screenshots of local HTML files in your workspace.
+
+  - Browser sessions are reused within a task and released when you stop the workflow, cancel the run, delete the task, or leave the session idle.
+</Update>
+
+<Update
   label="July 29, 2026"
   rss={{
     title: "More reliable database commands",
