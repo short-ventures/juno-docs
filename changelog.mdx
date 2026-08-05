@@ -6,6 +6,16 @@ rss: true
 ---
 
 <Update
+  label="August 6, 2026"
+  rss={{
+    title: "Automatic recovery after successful payments",
+    description: "Juno now clears stale payment blocks automatically when Stripe has already confirmed the invoice was paid."
+  }}
+>
+  - A paid invoice can no longer remain marked as failed because of an earlier billing attempt, so workspace access recovers without requiring support to resync the account.
+</Update>
+
+<Update
   label="August 5, 2026"
   rss={{
     title: "Non-expiring Bonus credits",
