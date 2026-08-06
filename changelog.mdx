@@ -8,11 +8,13 @@ rss: true
 <Update
   label="August 6, 2026"
   rss={{
-    title: "Automatic recovery after successful payments",
-    description: "Juno now clears stale payment blocks automatically when Stripe has already confirmed the invoice was paid."
+    title: "Billing recovery without false payment blocks",
+    description: "Juno now keeps valid subscriptions accessible after successful payments and declined automatic upgrades."
   }}
 >
   - A paid invoice can no longer remain marked as failed because of an earlier billing attempt, so workspace access recovers without requiring support to resync the account.
+
+  - If an automatic upgrade payment is declined, your current plan stays active and Juno shows the normal credit top-up options instead of marking the subscription as failed.
 </Update>
 
 <Update
