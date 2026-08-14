@@ -6,6 +6,20 @@ rss: true
 ---
 
 <Update
+  label="August 14, 2026"
+  rss={{
+    title: "Faster dashboard activity and artifact browsing",
+    description: "Juno now loads recent artifacts, sidebar history, previews, and dashboard ideas progressively so the dashboard is ready sooner."
+  }}
+>
+  - Recent activity loads the current and next carousel screens first, then prepares another screen as you move through it.
+
+  - The artifact sidebar now loads enough items for the visible area and continues as you scroll, while document and database previews load near the viewport and remain cached until their content changes.
+
+  - Fresh dashboard ideas and task history are reused between views instead of being requested again on every mount.
+</Update>
+
+<Update
   label="August 12, 2026"
   rss={{
     title: "More resilient long-running tasks",
