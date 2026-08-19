@@ -6,6 +6,18 @@ rss: true
 ---
 
 <Update
+  label="August 19, 2026"
+  rss={{
+    title: "More reliable background tasks",
+    description: "Juno now keeps background work healthy through temporary queue recovery errors."
+  }}
+>
+  - Active background tasks are no longer mistaken for abandoned work when queue recovery encounters an error, reducing duplicate attempts and delays.
+
+  - Background capacity now scales down cleanly after demand subsides while preserving in-progress work.
+</Update>
+
+<Update
   label="August 17, 2026"
   rss={{
     title: "Reliable task responses across model changes",
