@@ -6,6 +6,18 @@ rss: true
 ---
 
 <Update
+  label="August 25, 2026"
+  rss={{
+    title: "Faster sandbox-backed tasks",
+    description: "Juno now avoids long waits when a task tries to send an oversized working folder into a sandbox."
+  }}
+>
+  - Juno now stops oversized sandbox file mounts before they cause a long startup delay, with clear limits that let the task choose a lighter path immediately.
+
+  - Smaller sandbox workspaces are transferred more efficiently, reducing repeated setup time for Python and shell-backed work.
+</Update>
+
+<Update
   label="August 23, 2026"
   rss={{
     title: "Safer trial credit top-ups",
