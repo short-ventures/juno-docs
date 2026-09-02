@@ -11,7 +11,7 @@
 ## Terminology
 
 - Use "Juno" for the product.
-- Use "workspace" for a shared team context.
+- Use "space" for a shared team context.
 - Use "task" for delegated work.
 - Use "connector" for a connected tool integration in user-facing docs.
 - Use "credits" for metered usage.
