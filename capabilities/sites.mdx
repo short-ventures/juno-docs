@@ -1,0 +1,43 @@
+---
+title: "Site publishing"
+description: "Publish sites from Juno with built-in addresses, custom domains, and automatic SSL."
+icon: "globe"
+---
+
+Juno can publish a page artifact as a hosted site. Each site receives a built-in `juno.page` address, and you can connect a custom domain from your space settings.
+
+## Connect a custom domain
+
+1. Open **Settings** and select **Domains**.
+2. Enter the address you want visitors to use.
+3. Add the DNS records Juno shows at your DNS provider.
+4. Return to Juno and click **I've added these records**.
+
+Juno checks the public DNS records, provisions the SSL certificate, and keeps checking while changes propagate.
+
+## Root domains and www
+
+When you add a root domain such as `example.com`, Juno connects both `example.com` and `www.example.com`. The address you enter becomes the primary address, and the other version redirects to it while preserving the page path and query string.
+
+For example:
+
+- Enter `example.com` to use the root domain as primary.
+- Enter `www.example.com` to use `www` as primary.
+
+Your DNS provider must support CNAME flattening, `ALIAS`, or `ANAME` records to point a root domain to Juno. If it does not, connect `www.example.com` or another subdomain instead.
+
+## Subdomains
+
+When you add a normal subdomain such as `launch.example.com`, Juno connects only that exact address. Add the `CNAME` record shown in **Settings** to point it to Juno.
+
+## Domain status
+
+Juno tracks each connected address separately:
+
+- **Pending** means the DNS records still need to be added.
+- **Checking** means Juno is waiting for DNS or SSL validation.
+- **Partially active** means the primary address works but its paired address still needs attention.
+- **Active** means every address in the connection is ready.
+- **Issue** means validation failed and Juno needs you to check the displayed error.
+
+Newly connected domains use automatic SSL. DNS changes often appear within minutes but can take longer depending on your provider.

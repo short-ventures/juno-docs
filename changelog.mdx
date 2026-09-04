@@ -8,6 +8,18 @@ rss: true
 <Update
   label="September 4, 2026"
   rss={{
+    title: "Root and www custom domains",
+    description: "Juno now connects both versions of a root domain and keeps their DNS and SSL status clear."
+  }}
+>
+  - Adding a root domain now connects its root and `www` addresses together. The address you enter becomes primary, and the other version redirects to it without losing the page path.
+
+  - Juno now checks each address separately and shows when a domain is only partially active, making DNS and SSL issues easier to resolve.
+</Update>
+
+<Update
+  label="September 4, 2026"
+  rss={{
     title: "Faster interactive responses",
     description: "Juno now prioritizes faster model providers for requests you are actively waiting on."
   }}

@@ -31,6 +31,7 @@
               "capabilities/browser",
               "capabilities/file-system",
               "capabilities/code",
+              "capabilities/sites",
               "capabilities/scheduling",
               "capabilities/memory",
               "capabilities/email"
