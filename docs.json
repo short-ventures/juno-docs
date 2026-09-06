@@ -12,6 +12,12 @@
     "light": "/favicon.png",
     "dark": "/favicon-dark.png"
   },
+  "redirects": [
+    {
+      "source": "/capabilities/scheduling",
+      "destination": "/capabilities/routines"
+    }
+  ],
   "navigation": {
     "tabs": [
       {
@@ -32,7 +38,7 @@
               "capabilities/file-system",
               "capabilities/code",
               "capabilities/sites",
-              "capabilities/scheduling",
+              "capabilities/routines",
               "capabilities/memory",
               "capabilities/email"
             ]
