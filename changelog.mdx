@@ -6,6 +6,38 @@ rss: true
 ---
 
 <Update
+  label="September 8, 2026"
+  rss={{
+    title: "Steadier task processing during busy periods",
+    description: "Juno distributes tasks across available workers and keeps delayed retries through routine server updates."
+  }}
+>
+  - Tasks can use available workers when another worker is busy.
+
+  - Delayed retries are stored separately so routine server updates can proceed without interrupting those retries.
+</Update>
+
+<Update
+  label="September 8, 2026"
+  rss={{
+    title: "Full task history on mobile",
+    description: "Open your task history in the full chatbox on your phone."
+  }}
+>
+  - Tap the task history icon at the bottom right on mobile to open the full chatbox in Tasks mode.
+</Update>
+
+<Update
+  label="September 7, 2026"
+  rss={{
+    title: "Faster browsing across Juno's website",
+    description: "The homepage, landing pages, and public directories load faster on phones and desktop computers."
+  }}
+>
+  - Browse the homepage, playbooks, connectors, pricing, and landing pages with less waiting for content and controls.
+</Update>
+
+<Update
   label="September 7, 2026"
   rss={{
     title: "Juno in your language",
@@ -20,15 +52,31 @@ rss: true
 <Update
   label="September 7, 2026"
   rss={{
+    title: "Colour-coded routines and today’s schedule",
+    description: "Follow each routine by its colour and see today’s scheduled work on your dashboard."
+  }}
+>
+  - Each routine gets a colour from the library palette, shown as a left border on its calendar, list, and dashboard entries. More compact cards and tighter spacing make scheduled work easier to scan.
+
+  - The dashboard schedule now shows only today’s routines, in time order, with a single next-run time beneath each title.
+
+  - Empty dashboard cards have buttons that start a new task with a relevant question, so you can ask Juno how to connect your tools, set up a routine, or get started.
+</Update>
+
+<Update
+  label="September 7, 2026"
+  rss={{
     title: "Steadier capacity for busy task periods",
     description: "Juno can handle more tasks at once and adjust capacity more reliably as demand changes."
   }}
 >
-  - More tasks can run at the same time, with additional memory for background work.
+  - More tasks can run at the same time, with additional memory for background work and fewer interruptions when tool activity overlaps.
 
   - Capacity adjustments let running tasks finish and recover more reliably during deployments.
 
   - Long model and tool waits are less likely to fail when an idle database connection closes.
+
+  - Tasks can continue starting when temporary connection failures affect cached context.
 </Update>
 
 <Update
