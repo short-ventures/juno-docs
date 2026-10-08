@@ -13,7 +13,7 @@
 - Use "Juno" for the product.
 - Use "space" for a shared team context.
 - Use "task" for delegated work.
-- Use "connector" for a connected tool integration in user-facing docs.
+- Use "plugin" for a connected tool integration in user-facing docs.
 - Use "credits" for metered usage.
 
 ## Style preferences
@@ -29,4 +29,4 @@
 
 - Document user-facing behavior, not internal admin tools.
 - Do not hardcode unstable pricing or credit-cost numbers unless they are sourced from product copy or code.
-- Keep connector descriptions aligned with the app's available connector catalog.
+- Keep plugin descriptions aligned with the app's available plugin catalog.
